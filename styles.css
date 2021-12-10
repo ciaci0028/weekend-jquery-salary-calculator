@@ -10,3 +10,8 @@ h1 {
     text-align: center;
     padding: 30px 30px 30px 30px;
 }
+
+#totalMonthly {
+    text-align: right;
+    padding-right: 100px;
+}
