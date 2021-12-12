@@ -12,13 +12,16 @@
         [x] ID number
         [x] Job title
         [x] Annual Salary
-    [ ] Function to import data
+    [x] Function to import data
+        [x] Gathers input field data
+        [x] Create new objects
+        [x] Empty fields
     [ ] Submit button
         [x] HTML creation
-        [ ] Collects information
-        [ ] Stores information
+        [x] Collects information
+        [x] Stores information
         [ ] Calculates monthly costs
-        [ ] Appends to the DOM
+        [x] Appends to the DOM
         [ ] Conditional: 
             [ ] If costs exceed $20,000
             [ ] Red background color to total monthly cost

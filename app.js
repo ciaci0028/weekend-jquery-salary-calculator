@@ -10,6 +10,9 @@ function onReady() {
 // Create a global array for pushing to
 let employeeList = [];
 
+// Create a global total monthly variable
+let totalMonthly = 0;
+
 function submitInfo (event) {
 
     // Need to insert preventDefault to get my page to not refresh
@@ -60,4 +63,10 @@ function submitInfo (event) {
     $('#identification').val('');
     $('#jobTitle').val('');
     $('#annualSalary').val('');
+
+    // Add the annual salary to the total monthly
+    totalMonthly += employee.annualSalary;
+    console.log('total monthly', totalMonthly);
+    $('#totalMonthly').empty();
+    $('#totalMonthly').append(`Total Monthly: $${totalMonthly}`);
 }
