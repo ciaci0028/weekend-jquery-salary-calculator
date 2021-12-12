@@ -5,6 +5,7 @@ $(document).ready(onReady);
 function onReady() {
     // Submit new information upon click
     $('#formDiv').on('submit', submitInfo);
+    $(document).on('click', '.button', eliminateEmployee);
 }
 
 // Create a global array for pushing to
@@ -55,7 +56,7 @@ function submitInfo (event) {
                 <td>${employee.jobTitle}</td>
                 <td>${employee.annualSalary}</td>
                 <td>
-                    <button class='delete'>
+                    <button class='button'>
                     Eliminate
                 </td>
         `)
@@ -80,4 +81,9 @@ function submitInfo (event) {
             'background-color': 'red',
         })
     }
+}
+
+function eliminateEmployee() {
+    $(this).parents('tr').remove();
+    
 }
