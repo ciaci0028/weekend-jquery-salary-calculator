@@ -14,7 +14,7 @@
         [x] Annual Salary
     [ ] Function to import data
     [ ] Submit button
-        [ ] HTML creation
+        [x] HTML creation
         [ ] Collects information
         [ ] Stores information
         [ ] Calculates monthly costs
