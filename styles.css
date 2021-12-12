@@ -35,4 +35,14 @@ h2 {
     width: 300px;
 }
 
-#
+#totalMonthly {
+    width: 500px;
+    border: 3px solid black;
+}
+
+#monthlyContainer {
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    margin-left: 600px;
+}
