@@ -37,4 +37,20 @@ function submitInfo (event) {
     employeeList.push(employee);
 
     console.log('employee list', employeeList);
+
+    // Empty the tbody to start it fresh
+    $('#employeeTable').empty();
+
+    // Append the objects to the table using HTML formatting
+
+    for (let employee of employeeList) {
+        $('#employeeTable').append(`
+            <tr>
+                <td>${firstName}</td>
+                <td>${lastName}</td>
+                <td>${identification}</td>
+                <td>${jobTitle}</td>
+                <td>${annualSalary}</td>
+        `)
+    }
 }
