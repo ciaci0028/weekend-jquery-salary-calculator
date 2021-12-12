@@ -27,3 +27,9 @@ h2 {
     margin-bottom: 40px;
     margin-left: 10px;
 }
+
+#submitButton {
+    float: right; 
+    width: 100px;
+    margin-right: 500px;
+}
