@@ -4,18 +4,30 @@ $(document).ready(onReady);
 
 function onReady() {
     // Submit new information upon click
-    $('#submitButton').on('click', submitInfo);
+    $('#formDiv').on('submit', submitInfo);
 }
 
-function submitInfo () {
+function submitInfo (event) {
+
+    // Need to insert preventDefault to get my page to not refresh
+    event.preventDefault();
 
     // Creating variables for the functions in the input fields
+    // so I can utilize them later
     let firstName = $('#firstName').val();
     let lastName = $('#lastName').val();
-    let identification = $('#identification').val();
+    let identification = Number($('#identification').val());
     let jobTitle = $('#jobTitle').val();
-    let annualSalary = $('#annualSalary').val();
+    let annualSalary = Number($('#annualSalary').val()) ;
 
-    // Now I must take the input variables 
+    // Now I must take the input variables and put them into an object
+    let employee = {
+        firstName: firstName,
+        lastName: lastName,
+        identification: identification,
+        jobTitle: jobTitle,
+        annualSalary: annualSalary,
+    }
     
+    console.log('this is the employee', employee)
 }
