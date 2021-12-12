@@ -46,11 +46,18 @@ function submitInfo (event) {
     for (let employee of employeeList) {
         $('#employeeTable').append(`
             <tr>
-                <td>${firstName}</td>
-                <td>${lastName}</td>
-                <td>${identification}</td>
-                <td>${jobTitle}</td>
-                <td>${annualSalary}</td>
+                <td>${employee.firstName}</td>
+                <td>${employee.lastName}</td>
+                <td>${employee.identification}</td>
+                <td>${employee.jobTitle}</td>
+                <td>${employee.annualSalary}</td>
         `)
     }
+
+    // Empty fields after submit
+    $('#firstName').val('');
+    $('#lastName').val('');
+    $('#identification').val('');
+    $('#jobTitle').val('');
+    $('#annualSalary').val('');
 }
