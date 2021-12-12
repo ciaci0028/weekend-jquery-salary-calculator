@@ -16,7 +16,7 @@
         [x] Gathers input field data
         [x] Create new objects
         [x] Empty fields
-    [ ] Submit button
+    [x] Submit button
         [x] HTML creation
         [x] Collects information
         [x] Stores information
@@ -26,4 +26,5 @@
             [x] If costs exceed $20,000
             [x] Red background color to total monthly cost
     [ ] Delete button
-        [ ] Removes employee from the DOM
+        [x] Removes employee from the DOM
+        [ ] Subtracts monthly totals

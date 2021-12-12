@@ -70,7 +70,7 @@ function submitInfo (event) {
     $('#annualSalary').val('');
 
     // Add the annual salary to the total monthly
-    totalMonthly += employee.annualSalary;
+    totalMonthly += employee.annualSalary/12;
     console.log('total monthly', totalMonthly);
     $('#totalMonthly').empty();
     $('#totalMonthly').append(`Total Monthly: $${totalMonthly}`);
@@ -85,5 +85,6 @@ function submitInfo (event) {
 
 function eliminateEmployee() {
     $(this).parents('tr').remove();
-    
+    totalMonthly
+    $('#totalMonthly').empty();
 }
