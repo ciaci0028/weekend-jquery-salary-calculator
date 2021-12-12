@@ -14,40 +14,51 @@
     <h1>Salary Calculator</h1>
     
     <h2>Add Employee</h2>
-        <div id=inputFields>
-            <input
-                id="firstName"
-                type="text"
-                placeholder="First Name"
-            />
-            <input
-                id="lastName"
-                type="text"
-                placeholder="Last Name"
-            />
-            <input
-                id="identification"
-                type="number"
-                placeholder="ID"
-            />
-            <input
-                id="jobTitle"
-                type="text"
-                placeholder="Title"
-            />
-            <input
-                id="annualSalary"
-                type="number"
-                placeholder="Annual Salary"
-            />
-        </div>
-        <div>
-            <input 
-                id="submitButton"
-                type="submit"
-                value="Submit"
-            />
-        </div>
+        <div id=formDiv>
+            <form
+                id="form"
+                class="container form-group"
+            >
+                <input
+                    id="firstName"
+                    class="form-group"
+                    type="text"
+                    placeholder="First Name"
+                />
+                <input
+                    id="lastName"
+                    class="form-group"
+                    type="text"
+                    placeholder="Last Name"
+                />
+                <input
+                    id="identification"
+                    class="form-group"
+                    type="number"
+                    placeholder="ID"
+                />
+                <input
+                    id="jobTitle"
+                    class="form-group"
+                    type="text"
+                    placeholder="Title"
+                />
+                <input
+                    id="annualSalary"
+                    class="form-group"
+                    type="number"
+                    placeholder="Annual Salary"
+                />
+            </div>
+            <div>
+                <input 
+                    id="submitButton"
+                    class="form-group"
+                    type="submit"
+                    value="Submit"
+                />
+            </div>
+        </form>
 
     <h2>Employees</h2>
         <table class="table">
