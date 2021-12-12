@@ -1,18 +1,20 @@
 # Notes for project
 
-[ ] Set up project
-    [ ] index.html
-    [ ] css
-    [ ] jquery
-    [ ] js
+[x] Set up project
+    [x] index.html
+    [x] css
+    [x] jquery
+    [x] js
 [ ] Form
-    [ ] Input fields
-        [ ] First name
-        [ ] Last name
-        [ ] ID number
-        [ ] Job title
-        [ ] Annual Salary
+    [x] Input fields
+        [x] First name
+        [x] Last name
+        [x] ID number
+        [x] Job title
+        [x] Annual Salary
+    [ ] Function to import data
     [ ] Submit button
+        [ ] HTML creation
         [ ] Collects information
         [ ] Stores information
         [ ] Calculates monthly costs

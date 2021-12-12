@@ -15,3 +15,15 @@ h1 {
     text-align: right;
     padding-right: 100px;
 }
+
+h2 {
+    padding: 5px;
+    margin: 10px;
+}
+
+#inputFields {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}

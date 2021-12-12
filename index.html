@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="jquery.js"></script>
     <script src="app.js"></script>
     <title>Woodall Challenge Week 7</title>
@@ -13,34 +14,36 @@
     <h1>Salary Calculator</h1>
     
     <h2>Add Employee</h2>
-        <input
-            id="firstName"
-            type="text"
-            placeholder="First Name"
-        />
-        <input
-            id="lastName"
-            type="text"
-            placeholder="Last Name"
-        />
-        <input
-            id="identification"
-            type="number"
-            placeholder="ID"
-        />
-        <input
-            id="jobTitle"
-            type="text"
-            placeholder="Title"
-        />
-        <input
-            id="annualSalary"
-            type="number"
-            placeholder="Annual Salary"
-        />
+        <div id=inputFields>
+            <input
+                id="firstName"
+                type="text"
+                placeholder="First Name"
+            />
+            <input
+                id="lastName"
+                type="text"
+                placeholder="Last Name"
+            />
+            <input
+                id="identification"
+                type="number"
+                placeholder="ID"
+            />
+            <input
+                id="jobTitle"
+                type="text"
+                placeholder="Title"
+            />
+            <input
+                id="annualSalary"
+                type="number"
+                placeholder="Annual Salary"
+            />
+        </div>
 
     <h2>Employees</h2>
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>First Name</th>
