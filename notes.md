@@ -20,10 +20,10 @@
         [x] HTML creation
         [x] Collects information
         [x] Stores information
-        [ ] Calculates monthly costs
+        [x] Calculates monthly costs
         [x] Appends to the DOM
         [ ] Conditional: 
-            [ ] If costs exceed $20,000
-            [ ] Red background color to total monthly cost
+            [x] If costs exceed $20,000
+            [x] Red background color to total monthly cost
     [ ] Delete button
         [ ] Removes employee from the DOM

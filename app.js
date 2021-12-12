@@ -69,4 +69,11 @@ function submitInfo (event) {
     console.log('total monthly', totalMonthly);
     $('#totalMonthly').empty();
     $('#totalMonthly').append(`Total Monthly: $${totalMonthly}`);
+
+    // Create conditional that highlights red
+    if (totalMonthly > 20000 ) {
+        $('#totalMonthly').css({
+            'background-color': 'red',
+        })
+    }
 }
