@@ -85,6 +85,10 @@ function submitInfo (event) {
 
 function eliminateEmployee() {
     $(this).parents('tr').remove();
-    totalMonthly
-    $('#totalMonthly').empty();
+    totalMonthly -= $(this).prev();
+    // $('#totalMonthly').empty();
+    console.log('data', $(this).data());
+    console.log('data', $('#totalMonthly').data());
+    console.log(totalMonthly);
+    
 }

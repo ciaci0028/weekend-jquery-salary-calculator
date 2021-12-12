@@ -28,3 +28,6 @@
     [ ] Delete button
         [x] Removes employee from the DOM
         [ ] Subtracts monthly totals
+    [x] Stylizing
+        [x] Table
+        [x] Form
