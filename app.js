@@ -54,6 +54,10 @@ function submitInfo (event) {
                 <td>${employee.identification}</td>
                 <td>${employee.jobTitle}</td>
                 <td>${employee.annualSalary}</td>
+                <td>
+                    <button class='delete'>
+                    Eliminate
+                </td>
         `)
     }
 
