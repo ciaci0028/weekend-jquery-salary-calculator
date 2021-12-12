@@ -7,6 +7,9 @@ function onReady() {
     $('#formDiv').on('submit', submitInfo);
 }
 
+// Create a global array for pushing to
+let employeeList = [];
+
 function submitInfo (event) {
 
     // Need to insert preventDefault to get my page to not refresh
@@ -30,4 +33,8 @@ function submitInfo (event) {
     }
     
     console.log('this is the employee', employee)
+
+    employeeList.push(employee);
+
+    console.log('employee list', employeeList);
 }
