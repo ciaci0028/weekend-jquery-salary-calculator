@@ -84,11 +84,18 @@ function submitInfo (event) {
 }
 
 function eliminateEmployee() {
+    // Finding the annual salary of the to be eliminated employee
+    console.log('sibling', $(this).parent().prev().text());
+
+    // Subtract that employee's money from total Monthly
+    totalMonthly -= Number($(this).parent().prev().text()) / 12;
+
+    // Remove employee from array
+
+    // Remove employee from DOM
     $(this).parents('tr').remove();
-    totalMonthly -= $(this).prev();
-    // $('#totalMonthly').empty();
-    console.log('data', $(this).data());
-    console.log('data', $('#totalMonthly').data());
-    console.log(totalMonthly);
-    
+
+    // Updating the total monthly
+    $('#totalMonthly').empty();
+    $('#totalMonthly').append(`Total Monthly: $${totalMonthly}`);   
 }
