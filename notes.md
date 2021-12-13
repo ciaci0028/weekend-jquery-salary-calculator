@@ -5,7 +5,7 @@
     [x] css
     [x] jquery
     [x] js
-[ ] Form
+[x] Form
     [x] Input fields
         [x] First name
         [x] Last name
@@ -25,7 +25,7 @@
         [ ] Conditional: 
             [x] If costs exceed $20,000
             [x] Red background color to total monthly cost
-    [ ] Delete button
+    [x] Delete button
         [x] Removes employee from the DOM
         [ ] Subtracts monthly totals
     [x] Stylizing
