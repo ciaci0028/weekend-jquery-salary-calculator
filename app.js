@@ -11,6 +11,7 @@ function onReady() {
 // Create a global array for pushing to
 let employeeList = [];
 
+
 // Create a global total monthly variable
 let totalMonthly = 0;
 
@@ -78,6 +79,7 @@ function submitInfo (event) {
     if (totalMonthly > 20000 ) {
         $('#totalMonthly').css({
             'background-color': 'red',
+            'color': 'white',
         })
     }
 }
