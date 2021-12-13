@@ -94,6 +94,7 @@ function eliminateEmployee() {
     totalMonthly -= Number($(this).parent().prev().text()) / 12;
 
     // Remove employee from array
+    // Worked with Jacob Larson on this portion
     for (let i=0; i < employeeList.length; i++) {
         if ( $(this).parent().siblings('td.employeeID').data('employee-id') === employeeList[i].identification ) {
             employeeList.splice(employeeList[i], 1);
