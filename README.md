@@ -1,9 +1,10 @@
-# Project Name
+## Employee Salary Calculator
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Duration: Weekend Challenge
 
-## Description
+This application takes an input of employees with their credentials and displays them on a table. It calculates a total monthly budget based off the employee's annual salary. It has the ability to add new employees and delete employees based off buttons clicked by the user.
 
-Your project description goes here. What problem did you solve? How did you solve it?
+![Project Screenshot](/Caclculator-Screen-Shot.png)
+
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
