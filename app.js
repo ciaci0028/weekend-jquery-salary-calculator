@@ -51,14 +51,13 @@ function submitInfo (event) {
             <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
-                <td class='employeeID'
-                    data-employee-id =${employee.identification}>
+                <td class='employeeID'>
                         ${employee.identification}
                 </td>
                 <td>${employee.jobTitle}</td>
                 <td>${employee.annualSalary}</td>
                 <td>
-                    <button class='button'>
+                    <button class='button' data-employee-id = ${employee.identification} >
                     Eliminate
                 </td>
         `)
@@ -92,7 +91,7 @@ function eliminateEmployee() {
     // Remove employee from array
     // Worked with Jacob Larson on this portion
     for (let i=0; i < employeeList.length; i++) {
-        if ( $(this).parent().siblings('td.employeeID').data('employee-id') === employeeList[i].identification ) {
+        if ( $(this).data('employee-id') === employeeList[i].identification ) {
             employeeList.splice(employeeList[i], 1);
         }
     }
@@ -102,5 +101,5 @@ function eliminateEmployee() {
 
     // Updating the total monthly
     $('#totalMonthly').empty();
-    $('#totalMonthly').append(`Total Monthly: $${totalMonthly}`);   
+    $('#totalMonthly').append(`Total Monthly: $${totalMonthly.toFixed(2)}`);   
 }
