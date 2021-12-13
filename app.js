@@ -72,7 +72,7 @@ function submitInfo (event) {
     totalMonthly += employee.annualSalary/12;
     console.log('total monthly', totalMonthly);
     $('#totalMonthly').empty();
-    $('#totalMonthly').append(`Total Monthly: $${totalMonthly}`);
+    $('#totalMonthly').append(`Total Monthly: $${totalMonthly.toFixed(2)}`);
 
     // Create conditional that highlights red
     if (totalMonthly > 20000 ) {
