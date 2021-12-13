@@ -52,7 +52,10 @@ function submitInfo (event) {
             <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
-                <td>${employee.identification}</td>
+                <td class='employeeID'
+                    data-employee-id =${employee.identification}>
+                        ${employee.identification}
+                </td>
                 <td>${employee.jobTitle}</td>
                 <td>${employee.annualSalary}</td>
                 <td>
@@ -91,6 +94,11 @@ function eliminateEmployee() {
     totalMonthly -= Number($(this).parent().prev().text()) / 12;
 
     // Remove employee from array
+    for (let i=0; i < employeeList.length; i++) {
+        if ( $(this).parent().siblings('td.employeeID').data('employee-id') === employeeList[i].identification ) {
+            employeeList.splice(employeeList[i], 1);
+        }
+    }
 
     // Remove employee from DOM
     $(this).parents('tr').remove();
