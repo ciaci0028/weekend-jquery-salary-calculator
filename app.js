@@ -66,11 +66,7 @@ function submitInfo (event) {
     }
 
     // Empty fields after submit
-    $('#firstName').val('');
-    $('#lastName').val('');
-    $('#identification').val('');
-    $('#jobTitle').val('');
-    $('#annualSalary').val('');
+    $('#form input').val('');
 
     // Add the annual salary to the total monthly
     totalMonthly += employee.annualSalary/12;
